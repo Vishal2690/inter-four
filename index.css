@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Satisfy&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.logo {
+    
+    box-shadow: 2px 2px 6px gray;
+}
+
+img {
+    margin: 0 10px;
+}
+
+.list-cont{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+}
+.box {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    column-gap: 20px;
+
+}
+
+button {
+    text-align: center;
+    border: 2px solid rgb(244, 76, 160);
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+#button1 {
+    width: 100px;
+    height: 30px;
+    color: rgb(244, 76, 160);
+    background-color: white;
+}
+
+#button2 {
+    background-color: rgb(244, 76, 160);
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+#button1:hover {
+    color: black;
+}
+
+#button2:hover {
+    color: black;
+}
+.background{
+    background-image: url(./Masterhead\(web\).svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:40%;
+}
+.para-text{
+    width: 40%;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+
+
+.para-text .text{
+    font-family: 'Fragment Mono', monospace;
+    line-height: 40px;
+    color: rgb(248, 173, 24);
+}
+
+.para-text .text2{
+    font-size: 25px;
+    font-weight: normal;
+    color: red;
+    padding-top: 20px;
+}
+
+#btn{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(122, 122, 244);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 540px;
+    margin: 0px 40%;
+}
+#btn:hover{
+    background-color: gray;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(1, 200px);
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 40px;
+    justify-content: center;
+    
+}
+.item{
+   background-color: yellow;
+   text-align: center;
+   color: white;
+   padding: 20px 0px;
+   box-shadow: 2px 3px 5px gray;
+}
+.item1{
+    background-color: rgb(255, 0, 157);
+}
+
+.item2{
+    background-color: rgb(98, 0, 255);
+}
+
+.item3{
+    background-color: rgb(38, 255, 0);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .logo img{
+        width: 200px;
+        height: 90px;
+    }
+    .list-cont{
+        display: none;
+    }
+    .box {
+        flex-direction: column;
+        justify-content: left;
+    }
+    #button2{
+        margin-top: 10px;
+    }
+
+    .para-text{
+        width: 250px;
+       font-size: 15px;
+       position: absolute;
+       left: 20px;
+       top: 100px;
+
+    }
+    .para-text .text2{
+        width: 270px;
+        font-size: 15px;
+        position: relative;
+        left: 5px;
+        top: 5px
+    }
+    .background{
+        position: relative;
+        top: -320px;
+
+    }
+    #btn{
+        position: absolute;
+        top: 400px;
+        left: 15px;
+        width: 9rem;
+    }
+    .container{
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(3, 200px);
+        position: absolute;
+        top: 550px;
+        left: 5rem;
+        row-gap: 20px;
+    }
+
+
+}
+@media screen and (min-width: 480px) and (max-width: 900px){
+    .logo img{
+        width: 200px;
+        height: 90px;
+    }
+    .list-cont{
+        display: none;
+    }
+    .box {
+        flex-direction: column;
+        justify-content: left;
+    }
+    #button2{
+        margin-top: 10px;
+    }
+
+    .para-text{
+        width: 350px;
+       font-size: 20px;
+       position: absolute;
+       left: 20px;
+       top: 140px;
+
+    }
+    .para-text .text2{
+        width: 270px;
+        font-size: 15px;
+        position: relative;
+        left: 5px;
+        top: 5px
+    }
+    .background{
+        position: relative;
+        top: -250px;
+
+    }
+    #btn{
+        position: absolute;
+        top: 400px;
+        left: 20px;
+        width: 9rem;
+    }
+    .container{
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(3, 200px);
+        position: absolute;
+        top: 550px;
+        left: 10rem;
+        row-gap: 20px;
+    }
+
+
+}
